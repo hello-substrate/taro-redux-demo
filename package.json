@@ -2,7 +2,7 @@
   "name": "collection",
   "version": "1.0.0",
   "private": true,
-  "description": "collect",
+  "description": "rmrk-front",
   "templateInfo": {
     "name": "redux",
     "typescript": true,

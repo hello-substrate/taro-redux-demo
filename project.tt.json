@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
   "projectname": "collection",
-  "description": "collect",
+  "description": "rmrk-front",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,
