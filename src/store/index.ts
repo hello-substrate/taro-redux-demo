@@ -1,8 +1,17 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
+import logger from "redux-logger";
+
 import rootReducer from "../reducers";
 
+let middlewares = [];
+if (process.env.NODE_ENV === 'development') {
+  middlewares.push(logger);
+}
+
+// 文档 https://redux-toolkit.js.org/api/configureStore#full-example
 export const store = configureStore({
-  reducer: rootReducer
+  reducer: rootReducer,
+  middleware: getDefaultMiddleware => getDefaultMiddleware().concat(middlewares)
 });
 
 export type AppDispatch = typeof store.dispatch;
