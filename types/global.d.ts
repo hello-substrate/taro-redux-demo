@@ -17,3 +17,5 @@ declare namespace NodeJS {
   }
 }
 
+declare const IS_DEBUG: any;
+declare const IS_H5: any;
